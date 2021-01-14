@@ -43,7 +43,10 @@ h1, h2, h3, p {
 .title {
     margin-top: 100px;
     text-align: center;
-    color: var(--text-color-default)
+    color: var(--text-color-default);
+
+    animation-name: swipe-right;
+    animation-duration: 1s;
 }
 .project {
     display: flex;
@@ -51,6 +54,9 @@ h1, h2, h3, p {
 
     margin-top: 50px;
     color: var(--text-color-default);
+
+    animation-name: swipe-right;
+    animation-duration: 1s;
 }
 .project-content-left {
     margin-right: 20px;
@@ -90,7 +96,7 @@ h1, h2, h3, p {
     font-size: 14px;
 }
 /* wide screen */
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 721px) {
     .herotext {
         color: var(--text-color-default);
         width: calc(50% - 60px);
@@ -138,7 +144,6 @@ h1, h2, h3, p {
     
         margin-left: 10px;
         margin-right: 10px;
-
     }
 }
 
@@ -185,11 +190,21 @@ h1, h2, h3, p {
     .project-img {
         flex: 100%;
         border-radius: 10px;
+        order: 3;
         max-width: 100%;
         max-height: 100%;
     
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10px;
+    }
+}
+
+@keyframes swipe-right {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
     }
 }
