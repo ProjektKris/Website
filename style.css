@@ -17,7 +17,16 @@ html {
 
     font-family: sans-serif;
     font-weight: 100;
-    font-size: larger;
+    /* font-size: larger; */
+}
+
+@media screen and (max-width: 700px) {
+    .hero-text {
+        font-size: 3rem !important;
+    }
+    .hero-subtext {
+        font-size: 1rem !important;
+    }
 }
 
 .hero {
@@ -60,11 +69,56 @@ html {
     color: var(--text-color-sub);
 }
 
+@media screen and (max-width: 700px) {
+    .project-card {
+        min-width: 100% !important;
+    }
+}
+
 .projects {
     background-color: #262a2b;
-    padding: 100px 200px 100px 200px;
+    padding: 8vw 12vw 8vw 12vw;
+}
+
+.projects-list {
+    margin-top: 3vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    /* flex: 1; */
+    /* width: 33%; */
+    flex: 1;
+    min-width: 2vw;
+    padding: 1vw;
+    margin-top: 1rem;
+}
+
+.project-img {
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+    /* max-width: 380px;
+    max-height: 100%;
+
+    margin-left: 10px;
+    margin-right: 10px; */
+}
+
+.project-desc {
+    margin-top: 1rem;
+    padding: 0 1vw 0 1vw;
+    font-size: 0.9rem;
+    word-spacing: 0.1rem;
 }
 
 h1 {
     text-align: center;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
 }
