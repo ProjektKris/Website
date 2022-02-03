@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto'); */
 :root {
     --text-color-default: white;
     --text-color-sub: rgba(255, 255, 255, 0.5);
@@ -109,8 +109,9 @@ html {
 .project-desc {
     margin-top: 1rem;
     padding: 0 1vw 0 1vw;
-    font-size: 0.9rem;
-    word-spacing: 0.1rem;
+    font-size: 1rem;
+    word-spacing: 0.2rem;
+    line-height: 1.7rem;
 }
 
 h1 {
