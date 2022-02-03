@@ -123,3 +123,12 @@ h2 {
     text-align: center;
     margin: 0;
 }
+
+.footer {
+    background-color: #151818;
+    padding: 2vw 12vw 2vw 12vw;
+}
+
+.link {
+    color: rgba(5, 134, 255, 1);
+}
